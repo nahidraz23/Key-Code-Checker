@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     column-gap: 2rem;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -46,3 +47,10 @@ p {
     padding: 10px; 
     border: 2px solid black;
 }
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: row;
+      row-gap: 2rem;
+    }
+  }
